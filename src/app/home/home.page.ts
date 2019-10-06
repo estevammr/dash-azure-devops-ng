@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RestService } from '../services/rest.service';
 import { NavController } from '@ionic/angular';
-
+import { interval } from 'rxjs';
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
@@ -12,7 +12,9 @@ export class HomePage {
   builds: any;
 
   constructor(public navCtrl: NavController, public restService: RestService) {
-    this.getBuilds();
+    interval(10000).subscribe((val) => {
+      this.getBuilds();
+    });
   }
 
   getBuilds() {
@@ -20,5 +22,9 @@ export class HomePage {
       this.builds = data['value'];
       console.log(this.builds);
     });
+  }
+
+  ngOnInit() {
+    this.getBuilds();
   }
 }

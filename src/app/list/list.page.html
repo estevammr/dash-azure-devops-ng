@@ -17,7 +17,7 @@
     </ion-card-header>
     <ion-card-content>
       <p>{{release.reason}}</p>
-      <p>{{release.createdOn}}</p>
+      <p>{{release.createdOn | date:'medium'}}</p>
       <p>{{release.createdBy.displayName}}</p>
     </ion-card-content>
   </ion-card>

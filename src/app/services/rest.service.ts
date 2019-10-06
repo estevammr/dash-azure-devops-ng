@@ -18,6 +18,7 @@ export class RestService {
 
   apiUrl = 'https://dev.azure.com/estevammrodrigues/Teste/_apis';
   apiUrlRelease = 'https://vsrm.dev.azure.com/estevammrodrigues/Teste/_apis';
+  
   getBuilds() {
     return new Promise(resolve => {
       this.http.get(this.apiUrl + '/build/builds?maxBuildsPerDefinition=10&api-version=5.1', {

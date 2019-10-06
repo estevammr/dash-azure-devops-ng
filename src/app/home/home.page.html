@@ -20,8 +20,8 @@
       <p>{{build.result}}</p>
       <p>{{build.status}}</p>
       <p>{{build.sourceBranch}}</p>
-      <p>{{build.queueTime}}</p>
-      <p>{{build.startTime}}</p>
+      <p>{{build.queueTime | date:'medium'}}</p>
+      <p>{{build.startTime | date:'medium'}}</p>
       <p>{{build.reason}}</p>
       <p>{{build.requestedBy.displayName}}</p>
     </ion-card-content>
