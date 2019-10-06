@@ -59,8 +59,8 @@
     "typescript": "~3.4.3"
   },
   "engines": {
-    "node": "12.9.11",
-    "npm": "6.11.2"
+    "node": "6.11.0",
+    "npm": "3.10.10"
   },
   "description": "An Ionic project"
 }
