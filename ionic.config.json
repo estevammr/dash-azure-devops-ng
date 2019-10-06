@@ -1,5 +1,7 @@
 {
   "name": "dash-azure-devops-angular",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
