@@ -13,13 +13,13 @@ export class AppComponent {
   public appPages = [
     {
       title: 'Builds',
-      url: '/home',
-      icon: 'home'
+      url: '/build',
+      icon: 'build'
     },
     {
       title: 'Releases',
-      url: '/list',
-      icon: 'list'
+      url: '/release',
+      icon: 'jet'
     }
   ];
 
